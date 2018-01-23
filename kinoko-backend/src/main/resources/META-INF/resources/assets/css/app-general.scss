@@ -1,0 +1,69 @@
+@import '../css/_variables';
+@import "../../../node_modules/toastr/toastr";
+/*Common styles*/
+
+%color-white {
+  color: #ffffff;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%dark-bg {
+  background-color: #111111;
+}
+
+%orange-bg {
+  background-color:$sytac-orange;
+}
+
+/*General styles*/
+.sytac {
+  &--dark {
+    @extend %dark-bg;
+    @extend %color-white;
+  }
+
+  &--orange {
+    @extend %orange-bg;
+    @extend %color-white;
+  }
+
+  &--orange-light {
+    background-color: $sytac--orange-light;
+  }
+
+  &-btn--orange {
+    background-color: #cf711e;
+    border-color: #733f11;
+    @extend %color-white;
+
+    &:hover {
+      background-color:$sytac-orange;
+      @extend %cursor-pointer;
+    }
+  }
+}
+
+.cu-pointer:hover {
+  cursor: pointer !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/* override the background bootstrap style for the tooltip*/
+.tooltip .tooltip-inner, .tooltip .tooltip-arrow{
+  background-color: #495057 !important;
+}
+
+.container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+body {
+  padding-bottom: 58px;
+}
