@@ -11,7 +11,9 @@
     <modules>
         <module>kinoko-backend</module>
         <module>kinoko-boot</module>
-    </modules>
+        <module>kinoko-model</module>
+    <module>kinoko-frontend</module>
+  </modules>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -24,6 +26,16 @@
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>1.5.8.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.5.8.RELEASE</version>
         </dependency>
     </dependencies>
 

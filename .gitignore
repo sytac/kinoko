@@ -2,3 +2,5 @@
 /kinoko-backend/target/
 /target/
 /kinoko-boot/target/
+/kinoko-model/target/
+/kinoko-frontend/target/
