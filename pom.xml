@@ -12,7 +12,6 @@
         <module>kinoko-backend</module>
         <module>kinoko-boot</module>
         <module>kinoko-model</module>
-    <module>kinoko-frontend</module>
   </modules>
 
     <properties>
